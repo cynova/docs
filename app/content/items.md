@@ -192,3 +192,17 @@ If you wish to remove an Item from view or use without fully deleting it, consid
 [archiving the Item](#archive-an-item) instead.
 
 :::
+
+## Pre-fill fields
+
+To pre-fill certain fields, you can add a JSON-encoded payload to the item URL.
+
+These values will be automatically staged and can then be edited, saved or discarded by the user.
+
+### Example
+
+Pre-fill the "title" and "summary" fields
+
+```
+?data={"title":"Pre-filled title", "summary":"Pre-filled summary"}
+```
